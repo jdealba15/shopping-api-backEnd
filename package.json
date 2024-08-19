@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "name": "dynamic-shopping-list-api",
+  "name": "shopping-app-api",
   "version": "1.0.0",
   "description": "Dynamic grocery app",
   "author": "Jonathan De Alba",
