@@ -12,6 +12,9 @@
   "name": "shopping-app-api",
   "version": "1.0.0",
   "description": "Dynamic grocery app",
+  "engines": {
+    "node": "20.11.0"
+  },
   "author": "Jonathan De Alba",
   "license": "MIT",
   "type": "module"
