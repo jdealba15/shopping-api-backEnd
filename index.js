@@ -64,8 +64,8 @@ app.post('/', async (req, res) => {
     res.status(200).json(result);
 });
 
-app.get('/', async (req, res) => {
-    console.log('Request received')
+app.get('/', (req, res) => {
+    res.send('GET request to the homepage')
 });
 
 // app.listen(port, () => console.log(`Server listening on port ${port}`));
