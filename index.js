@@ -6,8 +6,8 @@ import { OpenAI } from 'openai';
 dotenv.config();
 
 const app = express();
-const port = 3000;
-
+// const port = 3000;
+const PORT = process.env.PORT || 3000;
 const openai = new OpenAI(process.env.OPENAI_API_KEY);
 
 app.use(cors());
@@ -64,4 +64,7 @@ app.post('/', async (req, res) => {
     res.status(200).json(result);
 });
 
-app.listen(port, () => console.log(`Server listening on port ${port}`));
+// app.listen(port, () => console.log(`Server listening on port ${port}`));
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
