@@ -64,6 +64,10 @@ app.post('/', async (req, res) => {
     res.status(200).json(result);
 });
 
+app.get('/', async (req, res) => {
+    console.log('Request received')
+});
+
 // app.listen(port, () => console.log(`Server listening on port ${port}`));
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
